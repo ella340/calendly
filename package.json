@@ -21,6 +21,7 @@
   "dependencies": {
     "chai": "^4.3.4",
     "faker": "^5.5.3",
-    "mailhog": "^4.16.0"
+    "mailhog": "^4.16.0",
+    "mailosaur": "^7.3.1"
   }
 }

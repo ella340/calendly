@@ -10,6 +10,7 @@ class MainPage {
     get $acceptCookiesBtn() { return $('[id="onetrust-accept-btn-handler"]'); }
     get $enterAValidEmailErr() { return $('[class="sc-14lw96l-1 bhcMNV"]'); }
     get $$headeMenuOptions() { return $$('.eUPVlN .goXdgo'); }
+    
 
     // Helper method to click menu options at the header
     clicklMenuOptionHeader(headerMenuBtnTxt) {
