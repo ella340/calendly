@@ -42,4 +42,10 @@ describe('Main Page -Sign Up', () => {
         MainPage.clicklMenuOptionHeader('Enterprise');
         expect(browser.getUrl()).to.include('for-enterprise');
     });
+
+    it("Should be able to choose teams menu option", () => {
+        browser.url('./')
+        MainPage.clicklMenuOptionHeader('Teams');
+        expect(browser.getUrl()).to.include('for-teams');
+    });
 });

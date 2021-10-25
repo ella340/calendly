@@ -10,7 +10,7 @@ const serverId = 'd0cganis';
 const serverDomain = serverId + '.mailosaur.net';
 const testEmail = (faker.random.word()) +'@' + serverDomain;
 
-describe('Signup page', () => {
+describe('Sign up page', () => {
     it('Registartion process', () => {
         browser.url('./')
         

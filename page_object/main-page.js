@@ -10,7 +10,8 @@ class MainPage {
     get $acceptCookiesBtn() { return $('[id="onetrust-accept-btn-handler"]'); }
     get $enterAValidEmailErr() { return $('[class="sc-14lw96l-1 bhcMNV"]'); }
     get $$headeMenuOptions() { return $$('.eUPVlN .goXdgo'); }
-    
+    get $footerAboutUsBtn() { return $('[class="sc-pt0hl1-0 dtJjAi"][href="/about"]'); }
+    get $startForFreeBtn() { return $('[class="sc-imgww4-0 hjFIUn sc-5u4ss5-0 dWvYW round-button-morph-shape"]'); }
 
     // Helper method to click menu options at the header
     clicklMenuOptionHeader(headerMenuBtnTxt) {
