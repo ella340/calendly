@@ -8,7 +8,6 @@ describe('About page', () => {
         MainPage.$acceptCookiesBtn.waitForClickable();
         MainPage.$acceptCookiesBtn.click();
         MainPage.$footerAboutUsBtn.scrollIntoView();
-        browser.debug();
         MainPage.$footerAboutUsBtn.click();
         AboutPage.$readMoreOnOurBlog.waitForDisplayed();
         AboutPage.$readMoreOnOurBlog.click();
