@@ -15,8 +15,8 @@ describe('Sign up page', () => {
         browser.url('./')
         
         //Navigate to Sign Up page
-        MainPage.$acceptCookiesBtn.waitForClickable();
-        MainPage.$acceptCookiesBtn.click();
+        //MainPage.$acceptCookiesBtn.waitForClickable();
+        //MainPage.$acceptCookiesBtn.click();
         MainPage.$emailTopTxt.moveTo();
         MainPage.$emailTopTxt.waitForClickable();
         MainPage.$emailTopTxt.setValue(testEmail)
