@@ -14,8 +14,6 @@ describe('Main Page -Sign Up', () => {
     it("Should be able to sign up with gmail account", () => {
         // Input gmail account
         browser.url('./')
-        MainPage.$acceptCookiesBtn.waitForClickable();
-        MainPage.$acceptCookiesBtn.click();
         MainPage.$emailTopTxt.moveTo();
         MainPage.$emailTopTxt.waitForClickable();
         MainPage.$emailTopTxt.setValue(maybeEmail);

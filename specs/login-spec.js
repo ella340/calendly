@@ -18,10 +18,6 @@ describe('Login', () => {
         LoginPage.$enterYourEmail.setValue(loginEmail);
         LoginPage.$logInButton.click();
 
-        //Accept cookies pop up
-        MainPage.$acceptCookiesBtn.waitForClickable();
-        MainPage.$acceptCookiesBtn.click();
-
         //Enter password and click continue
         LoginPage.$enterYourPassword.waitForClickable();
         LoginPage.$enterYourPassword.setValue(password);
