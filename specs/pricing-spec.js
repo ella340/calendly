@@ -35,9 +35,10 @@ describe('Pricing page', () => {
         SignUpPage.$resendItToYouTxt.waitForDisplayed();
     });
 
-    it('Should be able to sign up for Essentials plan billed annualy', () => {
+    it.only('Should be able to sign up for Essentials plan billed annualy', () => {
         // Navigate to Pricing page
         browser.url('./');
+        MainPage.$logInBtn.waitForDisplayed();
         MainPage.clicklMenuOptionHeader('Pricing');
 
         // Choose the Essentials plan
@@ -63,6 +64,7 @@ describe('Pricing page', () => {
     it('Should be able to sign up for Professional plan billed annualy', () => {
         // Navigate to Pricing page
         browser.url('./');
+        MainPage.$logInBtn.waitForDisplayed();
         MainPage.clicklMenuOptionHeader('Pricing');
 
         // Choose the professional plan
