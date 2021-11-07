@@ -16,7 +16,7 @@ describe('Main Page -Sign Up', () => {
         browser.url('./')
         MainPage.$emailTopTxt.moveTo();
         MainPage.$emailTopTxt.waitForClickable();
-        MainPage.$emailTopTxt.setValue(maybeEmail);
+        MainPage.$emailInput.setValue(maybeEmail);
         MainPage.$signUpBtn.click();
 
         //Verify the option to sign up with Gmail
@@ -28,7 +28,7 @@ describe('Main Page -Sign Up', () => {
         browser.url('./')
         MainPage.$emailTopTxt.moveTo();
         MainPage.$emailTopTxt.waitForClickable();
-        MainPage.$emailTopTxt.setValue(notAnEmail);
+        MainPage.$emailInput.setValue(notAnEmail);
         MainPage.$signUpBtn.click();
 
         //Verify error message 

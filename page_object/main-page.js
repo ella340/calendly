@@ -1,17 +1,18 @@
 "use strict";
 class MainPage {
 
-    get $getStartedBtn() { return $('button=Get Started'); }
-    get $logInBtn() { return $('[class="sc-l2chlf-0 jZRKaf"]'); }
-    get $signUpBtn() { return $('[class="sc-1gujuaa-0 ivWkKl"]'); }
+    get $getStartedBtn() { return $('button=Get started'); }
+    get $logInBtn() { return $('span=Log In'); }
+    get $signUpBtn() { return $('button=Sign Up'); }
+    get $signUpBtnFrame() { return $('[data-testid="signup-popup"] [data-testid="regular-button"]'); }
     get $$headerMenuBtn() { return $('[id="header-menu-item-0"]'); }
-    get $emailTopTxt() { return $('[class="sc-14lw96l-0 cHzMPc"]'); }
-    get $verifySignUpGMailBtn() { return $('[class="IOTsH6gplw0gNhzOtsQ7 cu9R_bgOcGxqzal2uL1c"]'); }
+    get $emailTopTxt() { return $('[data-testid="email-input"]'); }
+    get $emailInput() { return $('[type="email"]'); }
+    get $verifySignUpGMailBtn() { return $('h3=Hi testingsomething1@gmail.com!'); }
     get $closeCookiesWindow() { return $('[id="onetrust-close-btn-container"]'); }
-    get $enterAValidEmailErr() { return $('[class="sc-14lw96l-1 bhcMNV"]'); }
-    get $$headeMenuOptions() { return $$('.eUPVlN .goXdgo'); }
+    get $enterAValidEmailErr() { return $('span=Please enter a valid email address.'); }
+    get $$headeMenuOptions() { return $$('[data-testid="header"] .sc-1i84b6l-0'); }
     get $footerAboutUsBtn() { return $('[tabindex="0"] [href="/about"]'); }
-    get $startForFreeBtn() { return $('[class="sc-imgww4-0 hjFIUn sc-5u4ss5-0 dWvYW round-button-morph-shape"]'); }
     get $tryCalendlyFree() { return $('p=Try Calendly free'); }
 
     // Helper method to click menu options at the header
