@@ -14,6 +14,10 @@ class MainPage {
     get $$headeMenuOptions() { return $$('[data-testid="header"] .sc-1i84b6l-0'); }
     get $footerAboutUsBtn() { return $('[tabindex="0"] [href="/about"]'); }
     get $tryCalendlyFree() { return $('p=Try Calendly free'); }
+    get $productBtn() { return $('[id="header-menu-item-3"]'); }
+    get $integrationsBtn() { return $('[href="/integration"]'); }
+    get $resourcesBtn() { return $('[id="header-menu-item-5"]'); }
+    get $partnerWithUsBtn() { return $('[href="/partners"]'); }
 
     // Helper method to click menu options at the header
     clicklMenuOptionHeader(headerMenuBtnTxt) {

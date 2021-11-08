@@ -4,9 +4,8 @@ const SignUpPage = require("../page_object/sign-up-page")
 
 const faker = require("faker");
 
-const serverId = 'd0cganis';
-const serverDomain = serverId + '.mailosaur.net';
-const testEmail = (faker.random.word()) +'@' + serverDomain;
+const emailDomain = '@test.net';
+const testEmail = (faker.random.word()) + emailDomain;
 
 describe('Pricing page', () => {
 
@@ -35,7 +34,7 @@ describe('Pricing page', () => {
         SignUpPage.$resendItToYouTxt.waitForDisplayed();
     });
 
-    it.only('Should be able to sign up for Essentials plan billed annualy', () => {
+    it('Should be able to sign up for Essentials plan billed annualy', () => {
         // Navigate to Pricing page
         browser.url('./');
         MainPage.$logInBtn.waitForDisplayed();

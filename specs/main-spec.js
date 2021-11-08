@@ -35,15 +35,43 @@ describe('Main Page -Sign Up', () => {
         MainPage.$enterAValidEmailErr.waitForDisplayed();
     });
 
-    it("Should be able to choose enterprise menu option", () => {
+    it("Should be able to choose individuals menu option", () => {
         browser.url('./')
-        MainPage.clicklMenuOptionHeader('Enterprise');
-        expect(browser.getUrl()).to.include('for-enterprise');
+        MainPage.clicklMenuOptionHeader('Individuals');
+        expect(browser.getUrl()).to.include('for-individuals');
     });
 
     it("Should be able to choose teams menu option", () => {
         browser.url('./')
         MainPage.clicklMenuOptionHeader('Teams');
         expect(browser.getUrl()).to.include('for-teams');
+    });
+
+    it("Should be able to choose enterprise menu option", () => {
+        browser.url('./')
+        MainPage.clicklMenuOptionHeader('Enterprise');
+        expect(browser.getUrl()).to.include('for-enterprise');
+    });
+
+    it("Should be able to choose products -> integrations menu option", () => {
+        browser.url('./')
+        MainPage.$productBtn.moveTo();
+        MainPage.$integrationsBtn.waitForClickable();
+        MainPage.$integrationsBtn.click();
+        expect(browser.getUrl()).to.include('integration');
+    });
+
+    it("Should be able to choose pricing menu option", () => {
+        browser.url('./')
+        MainPage.clicklMenuOptionHeader('Pricing');
+        expect(browser.getUrl()).to.include('pricing');
+    });
+
+    it("Should be able to choose resources -> partner with us menu option", () => {
+        browser.url('./')
+        MainPage.$resourcesBtn.moveTo();
+        MainPage.$partnerWithUsBtn.waitForClickable();
+        MainPage.$partnerWithUsBtn.click();
+        expect(browser.getUrl()).to.include('partners');
     });
 });
